@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinamica em varios dispositivos diferentes</title>
+</head>
+<body>
+    <p>Tente abrir esse site em varios dispositivos ou simplesmente diminua a tela do seu nevegador</p>
+    
+    <picture>
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudios em HTML5</h1>
+    <p>Vamos aprender reproduzindo áudio</p>
+   <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <p>infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">baixe aqui o arquivo mp3</a></p>
+   </audio>
+   <p></p>
+   <audio preload="metadata" autoplay controls loop>
+    <source src="midia/yucant.mp3" type="audio/mpeg">
+   </audio>
+   <h1>Colocando Vídeos no HTML5<h1>
+    <h2>Inserindo vídeos hospedando localmente</h2>
+    <p>este vídeo esta hospedado no meu próprio servidor</p>
+    <video width="500" controls loop>
+        <source src="videos/curso-video.m4v" type="video/m4v">
+        <source src="videos/curso-video.webm" type="video/webm">
+        <source src="videos/curso-video.mp4" type="video/mp4">
+        <p>Seu nevagador não tem compatibilidade.</p>
+    </video>
+    <h1>Colocando vídeos externos!</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/zrIfhUVB_3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
